@@ -1,0 +1,42 @@
+.foot .foot-icon{
+    margin: 40px 60px 0 60px;
+    padding-left: 30px; 
+    font-size: 4rem;
+}
+.foot{
+    background-color: rgba(135, 206, 250, 0.432);
+    /* opacity: 50%; */
+    
+}
+
+.foot-txt li{
+    list-style: none;
+    font-size: small;
+
+}
+.foot .foot-txt ul li{
+    display: inline;
+    justify-content: space-around;
+    padding: 10px;
+    margin-left: 65px;
+    margin-bottom: 2rem;
+
+}
+.foot-txt ul{
+    padding-left: 0;
+}
+.foot-txt{
+    padding-bottom: 40px;
+}
+.foot-im img{
+    width: 300px;
+    padding: 10px;
+    
+    /* height: 200px; */
+}
+.abc{
+    text-align: center;
+}
+.text-body-secondary{
+    font-size: 2rem;
+}

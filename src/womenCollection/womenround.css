@@ -1,0 +1,28 @@
+.irr1-sm{
+    display: flex;
+}  
+
+.ir1-sm img{
+    width: 250px;
+    justify-content: space-evenly;
+    /* border: 5px solid #f3c141c2; */
+    border-radius: 50%;
+}
+
+.ir1-sm{
+    border: 1px solid gold;
+    border-radius: 221px;
+    height: 260px;
+    width: 23%;
+    background-color: gold;
+    margin: 20px;
+    margin-bottom: 100px;
+}
+.ir1-sm .irtxt-sm{
+    font-size: x-large;
+    padding: 20px 0 20px 0;
+    margin-bottom: 70px;
+    font-family: sans-serif;
+    text-align: center;
+}
+

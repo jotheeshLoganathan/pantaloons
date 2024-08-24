@@ -1,0 +1,11 @@
+.f1 li{
+    list-style: none;
+    font-size:smaller;
+    text-align: left;
+}
+.f1 .c1{
+    font-size: small;
+}
+.f1{
+    margin: 20px;
+}

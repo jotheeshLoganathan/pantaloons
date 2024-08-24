@@ -1,0 +1,82 @@
+.navbar-brand img{
+    width: 300px;
+    background-color: transparent;
+}
+.navbar-brand {
+    position: sticky;
+}
+    
+.aa1{
+    padding: 10px;
+    background: #00b0b5;
+    position: fixed; 
+    z-index: 4; 
+    width: 100%;
+    margin-bottom: 100px;   
+}   
+
+.navbar-collapse .nav-link:hover{
+    color: #cfc314;
+    text-decoration: underline;
+}
+.navbar-collapse .nav-link{
+    color: #f5f5f5;
+}
+.d-flex .btn:hover{
+    background-color: #14cfba;
+}
+.fug{
+    font-size: 30px;
+    padding: 3px;
+    color: #f5f5f5;
+    margin-right: 10px;
+}
+.lhh{
+    font-size: 30px;
+    padding: 3px;
+    color: #f5f5f5;
+    margin-right: 10px;
+
+}
+.rsb{
+    font-size: 30px;
+    padding: 3px;
+    color: #f5f5f5;
+    margin-right: 10px;
+
+}
+.mega {
+    display: flex;
+}
+.mega-menu-content {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 80%;
+    height: 300px;
+    background: #f5f5f5;
+    padding: 15px;
+    transition: all 0.3s linear;
+    visibility: hidden;
+    opacity: 0;
+    overflow: scroll;
+    margin-top: 21px;
+}
+.mega ul li{
+    list-style: none;
+    font-size: small;
+    justify-content: space-evenly;
+}
+li.nav-item:hover .mega-menu-content{
+    visibility: visible;
+    opacity: 1;
+}
+.aa1 .btn{
+    color: #f5f5f5;
+    margin-right: 20px;
+}
+
+
+
+  
