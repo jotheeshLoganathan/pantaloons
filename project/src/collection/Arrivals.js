@@ -12,7 +12,7 @@ import { Navigation, Pagination, Keyboard } from "swiper/modules";
 // import Maping from "../maping/Maping";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCort, deleteFromCart } from "../store/cardslice/Cardslice";
-
+ 
 const Arrivals = () => {
   const [productData,setProductData]= useState([]);
 
