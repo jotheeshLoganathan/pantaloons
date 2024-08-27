@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Form, Route, Routes } from 'react-router-dom'
 import Home from './page/Home'
 import Navbar from './companent/Navbar'
 import Footer from './companent/Footer'
@@ -17,7 +17,7 @@ import Womenaddcart from './admin/Womenaddcart'
 import Kidssadmin from './admin/Kidsadmin'
 import Kidsaddcart from './admin/Kidsaddcart'
 import Kidsedit from './admin/Kidsedit'
-
+import LoginForm from './companent/Form'
 const App =() =>{
     return(
         <div>
@@ -30,6 +30,8 @@ const App =() =>{
                 <Route path ='/Kids' element={<Kids/>}/>
                 <Route path='/cart' element={<Cartpage/>}/>
                 <Route path='/Admin' element={<Admin/>}/>
+                <Route path='/login' element={<LoginForm/>}/>
+
                 <Route 
                 path='/Admin/Mensadmin' 
                 element={<Mensadmin/>}

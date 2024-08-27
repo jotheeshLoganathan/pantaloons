@@ -800,10 +800,17 @@ const Navbar = () => {
               </li>
             </ul>
             
-            <FaRegUser className="fug"/>
+            <Link to='/login'><FaRegUser className="fug"/></Link>
            <Link to='/cart'>
-           <LuHeartHandshake className="lhh"/>{totalCount}    
-            </Link>
+                <div className="total-count">
+                    <span class="position-absolute translate-middle badge rounded-pill bg-danger">
+                        {totalCount}
+                    </span>
+                    <div className="total-value">
+                        <LuHeartHandshake className="lhh"/>  
+                    </div> 
+                </div>   
+            </Link>        
            {totalPrice}
             <RiShoppingBag4Line className='rsb'/>
           </div>
