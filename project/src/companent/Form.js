@@ -8,6 +8,7 @@ const LoginForm = () => {
             <div className='col-md-4'></div>
             <div className='col-md-4'>
                 <div className='form-valedaiton card'>
+                    <h1 className='heading-for-form'>Register</h1>
                 <div class="card-body">
                     <form>
                         <div class="mb-3">

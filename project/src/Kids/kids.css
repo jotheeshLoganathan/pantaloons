@@ -91,6 +91,9 @@
     margin-bottom: 10px;
     margin-top: 20px;
   }
+  .koi .card img{
+    height: 300px;
+  }
   .card-body{
     border: none;
   }

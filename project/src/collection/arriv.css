@@ -53,6 +53,9 @@ display: flex;
   margin-bottom: 10px;
   margin-top: 20px;
 }
+.go .card img{
+  height: 300px;
+}
 .card-body{
   border: none;
 }

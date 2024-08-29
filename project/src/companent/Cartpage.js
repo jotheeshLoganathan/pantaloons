@@ -34,9 +34,9 @@ const Cartpage = () => {
                                 <h5 className="h2 w-5">{item.title}</h5>
                                 <p className='fs-5'>₹{item.price}</p>
                                 <p className='fs-5'>{item.ds}</p>
-                                <button type='button' onClick={() => decrementQuantity(item._id,item.quantity)}>-</button>
-                                {item.quantity}
-                                <button type='button' onClick={() => incrementQuantity(item._id,item.quantity)}>
+                                <button type='button' className='bcolor' onClick={() => decrementQuantity(item._id,item.quantity)}>-</button>
+                                Quantity {item.quantity}
+                                <button type='button' className='bcolor' onClick={() => incrementQuantity(item._id,item.quantity)}>
                                     +
                                 </button>
                             </div>

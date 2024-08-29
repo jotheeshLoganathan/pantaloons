@@ -34,7 +34,7 @@ const Kidsaddcart = () =>{
         .then((data)=>{
             toast.success("Product Added Successfully")
             form.reset();
-            window.location.href= "/Admin/Women/Kidsadmin";
+            window.location.href= "/admin/Kidsaddcart";
         });
         
     }
@@ -64,7 +64,7 @@ const Kidsaddcart = () =>{
                         Decription
                     </label><br></br>
                     <textarea className='text-input-textarea fs-5' aria-lable='decription'name='ds' id='ds'></textarea><br></br>
-                    <button className='btn btn-danger'><Link className='moving-admin' to="/Admin/Women/Kidsadmin"><FaBackspace />
+                    <button className='btn btn-danger'><Link className='moving-admin' to="/admin/Kidsaddcart"><FaBackspace />
                     Back </Link></button>
                     <button className='btn btn-success' type='submit'><IoIosCloudDone />
                     Sumit </button>

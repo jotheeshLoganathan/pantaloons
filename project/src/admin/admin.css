@@ -2,12 +2,13 @@
     padding: 100px;
     background-color: black;
     height: 100%;
-    width: 30%;
+    width: 30%; 
 }   
 .Admin_menu ul li{
     list-style: none;
     line-height: 60px;
     color: #f5f5f5;
+    width: 142px;   
 }
 .Admin_menu ul li:hover a{
     color: #dbdbdbbb;
@@ -118,6 +119,8 @@
 .Admin_menu .dash{
     text-decoration: none;
     color: #f5f5f5;
+    display: flex;
+    align-items: center;
 }
 .menedit{
     text-decoration: none;
