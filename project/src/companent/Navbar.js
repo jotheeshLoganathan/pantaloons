@@ -800,7 +800,7 @@ const Navbar = () => {
               </li>
             </ul>
             
-            <Link to='/login'><FaRegUser className="fug"/></Link>
+            <Link to='/LoginForm'><FaRegUser className="fug"/></Link>
            <Link to='/cart'>
                 <div className="total-count">
                     <span class="position-absolute translate-middle badge rounded-pill bg-danger">

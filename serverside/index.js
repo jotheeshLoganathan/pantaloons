@@ -1,5 +1,8 @@
 //initialize the backend and front end package
 const express = require('express');
+const jwt = require('jsonwebtoken');
+const bodyParser = require('body-parser');
+const bcrypt = require('bcryptjs')
 const app = express();
 const port = process.env.PORT || 5000;
 const cors = require('cors');
@@ -11,6 +14,36 @@ app.use(express.json());
 app.get('/', (req, res) => {
   res.send('Hello world');
 })
+
+const users =[];
+const secretkey = 'your-secret-key';
+
+
+app.post('/Register',async(req,res) =>{
+  const { username,email,password } = req.body;
+  const hashedPassword = await bcrypt.hash(password, 10);
+  users.push({ username,email,   password: hashedPassword});
+  console.log('user register:', username);
+  res.sendStatus(201);
+});
+
+app.post('/LoginForm',async (req,res) =>{
+  const {username, password} =req.body;
+  const user = users.find(u =>u.username === username);
+  if(user) {
+    const isPasswordValid = await bcrypt.compare(password, user.password);
+    if (isPasswordValid){
+      const token = jwt.sign({ username }, secretkey, { expiresIn: '1h'});
+      res.json({ token });
+    } else {
+      console.log('Invalid password for user:', username);
+      res.status(401).json({ message: 'Invalid credentials' });
+    }
+  } else {
+    console.log('user not found:', username);
+    res.status(401).json({ message: 'Invalid credentials' });
+  }
+});
 
 
 const { MongoClient, ServerApiVersion,ObjectId } = require("mongodb");

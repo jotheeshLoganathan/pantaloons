@@ -17,7 +17,9 @@ import Womenaddcart from './admin/Womenaddcart'
 import Kidssadmin from './admin/Kidsadmin'
 import Kidsaddcart from './admin/Kidsaddcart'
 import Kidsedit from './admin/Kidsedit'
-import LoginForm from './companent/Form'
+import Register from './companent/Form'
+import LoginForm from './companent/Login'
+
 const App =() =>{
     return(
         <div>
@@ -30,7 +32,8 @@ const App =() =>{
                 <Route path ='/Kids' element={<Kids/>}/>
                 <Route path='/cart' element={<Cartpage/>}/>
                 <Route path='/Admin' element={<Admin/>}/>
-                <Route path='/login' element={<LoginForm/>}/>
+                <Route path='/Register' element={<Register/>}/>
+                <Route path='/LoginForm' element={<LoginForm/>}/>
 
                 <Route 
                 path='/Admin/Mensadmin' 
