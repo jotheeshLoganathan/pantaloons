@@ -14,3 +14,7 @@
     margin: 0;
     width: 100%;
 }
+.alert{
+    padding: 0 !important; 
+    margin: 0 !important;
+}
