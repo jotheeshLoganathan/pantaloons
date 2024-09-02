@@ -22,7 +22,7 @@ const secretkey = 'your-secret-key';
 app.post('/Register',async(req,res) =>{
   const { username,email,password } = req.body;
   const hashedPassword = await bcrypt.hash(password, 10);
-  users.push({ username,email,   password: hashedPassword});
+  users.push({ username, email, password: hashedPassword});
   console.log('user register:', username);
   res.sendStatus(201);
 });

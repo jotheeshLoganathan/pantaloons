@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import"./form.css"
 import { register } from './Auth';
+import { Form, Link } from 'react-router-dom';
 
 const LoginForm = () => {
     const [username, setUsername] = useState('');
@@ -13,15 +14,17 @@ const LoginForm = () => {
         e.preventDefault();
         try{
             await register(username,email,password);
-            setSuccess('registration successful! you can now log in.');
-            setError(' ');
-            setUsername (' ');
-            setEmail(' ');
-            setPassword(' ');
+            setSuccess('registration successful! you can now log in');
+            setError('');
+            setUsername ('');
+            setEmail('');
+            setPassword('');
+            // Form.resert();
+            // window.location.href='/LoginForm'
         } catch(err) {
             console.error('Registration error :',err);
             setError('Regitration failed');
-            setSuccess(' ');
+            setSuccess('');
         }
     };
 
@@ -110,7 +113,9 @@ const LoginForm = () => {
                             class="form-control" 
                             id="exampleInputPassword1"/>
                         </div>
+                        <Link to='/LoginForm'>
                         <button type="submit" class="btn btn-primary">Submit</button>
+                        </Link>
                         {error && <p style = {{ color:'red'}}>{error}</p>}
                         {success && <p style = {{ color:'green'}}>{success}</p>}
                     </form>

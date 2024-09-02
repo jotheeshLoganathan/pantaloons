@@ -12,7 +12,7 @@ const Login = () => {
     const handleSubmit = async (e) =>{
         e.preventDefault ();
         console.log('username :',username);
-        console.log(' password :',password);
+        console.log('password :',password);
 
         try {
             const token = await login(username,password);
